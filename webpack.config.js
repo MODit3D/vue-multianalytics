@@ -7,7 +7,7 @@ module.exports = {
     'vue-multianalytics.min': './src/index.js'
   },
   output: {
-    path: "./dist",
+    path: __dirname + "/dist",
     filename: "[name].js",
     libraryTarget: 'commonjs2'
   },
@@ -20,7 +20,7 @@ module.exports = {
     }),
   ],
   resolve: {
-    extensions: [ '', '.js', '.json' ]
+    extensions: [ '.js', '.json' ]
   },
   module: {
     loaders: [

@@ -217,6 +217,19 @@ export default class AnalyticsPlugin {
                  }
 
                  /**
+                  * increment a user property
+                  *
+                  * @param {any} properties - The some properties that will incremented by the count
+                  */
+                 incrementUserProperties(properties = {}, excludedModules = []) {
+                   this.modulesEnabled.forEach(module => {
+                     if (excludedModules.indexOf(module.name) === -1) {
+                       module.incrementUserProperties(properties);
+                     }
+                   });
+                 }
+
+                 /**
                   * Identify the user
                   *
                   * @param {string} userId - The unique ID of the user
