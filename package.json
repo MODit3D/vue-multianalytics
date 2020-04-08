@@ -1,5 +1,5 @@
 {
-	"name": "vue-multianalytics",
+	"name": "@modit3d/vue-multianalytics",
 	"version": "1.11.7",
 	"description": "A vue multianalytics tool",
 	"main": "./dist/vue-multianalytics.min.js",
