@@ -48,5 +48,8 @@
 		"Vue2",
 		"vue",
 		"google"
-	]
+	],
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
 }
